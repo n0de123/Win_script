@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+build/
+dist/
+*.spec
+
+install_all.ps1
+config.json
+exe for install/
+
+.DS_Store
+Thumbs.db

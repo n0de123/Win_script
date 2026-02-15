@@ -1,0 +1,28 @@
+{
+    "defaults": {
+      "exe_args_try": [
+        ["/S"],
+        ["/silent"],
+        ["/verysilent"],
+        ["/quiet"],
+        ["/qn"]
+      ],
+      "msi_args": ["/qn", "/norestart"]
+    },
+    "rules": [
+      {
+        "match": { "type": "exact", "value": "7z2408-x64.exe" },
+        "args": ["/S"]
+      },
+      {
+        "match": { "type": "contains", "value": "chrome" },
+        "args": ["/silent", "/install"]
+      }
+    ],
+    "install_order": [
+      "vc_redist.x64.exe",
+      "dotnet-runtime.exe",
+      "7z2408-x64.exe"
+    ]
+  }
+  
